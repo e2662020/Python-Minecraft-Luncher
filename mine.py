@@ -1,12 +1,12 @@
 # 定义我们将要是用到的命令用来操控这个
 '''
 Usage:
-  mine run <想要启动的我的世界版本号>
-  mine install <想要下载的我的世界版本号>
-  mine micr
-  mine version
-  mine v
-  mine forge <forge版本> 
+  python3 mine.py run <想要启动的我的世界版本号>
+  python3 mine.py install <想要下载的我的世界版本号>
+  python3 mine.py micr     #开发中功能
+  python3 mine.py version
+  python3 mine.py v
+  python3 mine.py forge <forge版本>      #开发中功能
 '''
 #导库
 from docopt import *
@@ -25,7 +25,7 @@ try:
     #     ipd.Audio("1.wav")
 
     
-
+    debug = False #开发人员请将False改为True已触发开发中的功能，如果您是正常使用请不要动。
 
     current_max = 0
 
@@ -51,9 +51,6 @@ try:
         "setProgress": set_progress,
         "setMax": set_max
     }
-
-
-    debug = True
 
     arguments = docopt(__doc__,options_first=True)
     #设置minecraft目录为自动读取的默认目录
@@ -112,5 +109,5 @@ try:
 except:
     import traceback
     e = traceback.format_exc()
-    print("傻B写的程序又出错了，请将/logs文件夹的所有文件和mc的日志（"+minecraft_directory+"/logs/）打包发给他人给予分析（或者发给我：e2662020@outlook.com）（顺便说一下，我要上学，回复慢）")
+    print("傻子写的程序又出错了，请将/logs文件夹的所有文件和mc的日志（"+minecraft_directory+"/logs/）打包发给他人给予分析（或者发给我：e2662020@outlook.com）（顺便说一下，我要上学，回复慢）")
     logging.error("错误,Python输出:\n%s---------------",e)
