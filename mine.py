@@ -109,5 +109,5 @@ try:
 except:
     import traceback
     e = traceback.format_exc()
-    print("傻子写的程序又出错了，请将/logs文件夹的所有文件和mc的日志（"+minecraft_directory+"/logs/）打包发给他人给予分析（或者发给我：e2662020@outlook.com）（顺便说一下，我要上学，回复慢）")
+    print("程序又出错了，请将/logs文件夹的所有文件和mc的日志（"+minecraft_directory+"/logs/）打包发给他人给予分析（或者发给我：e2662020@outlook.com）（顺便说一下，我要上学，回复慢）")
     logging.error("错误,Python输出:\n%s---------------",e)
