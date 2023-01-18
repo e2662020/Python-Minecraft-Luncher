@@ -10,7 +10,7 @@
 
 ## 视频介绍
 
-<iframe src="//player.bilibili.com/player.html?aid=986352437&bvid=BV1Yt4y1c7WF&cid=853734348&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height="500px"> </iframe>
+[b站](https://www.bilibili.com/video/BV1Yt4y1c7WF)
 
 
 
