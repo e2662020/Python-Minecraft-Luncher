@@ -1,0 +1,28 @@
+ERROR:root:错误,Python输出:
+Traceback (most recent call last):
+  File "/Users/ericsmac/Downloads/Python-Minecraft-Luncher/cmd/mine.py", line 50, in <module>
+    arguments = docopt(__doc__, options_first=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/docopt.py", line 579, in docopt
+    raise DocoptExit()
+docopt.DocoptExit: Usage:
+  mine run <想要启动的我的世界版本号>
+  mine install <想要下载的我的世界版本号>
+  mine micr
+  mine version
+  mine v
+  mine forge <forge版本>
+---------------
+ERROR:root:错误,Python输出:
+Traceback (most recent call last):
+  File "/Users/ericsmac/Downloads/Python-Minecraft-Luncher/cmd/mine.py", line 50, in <module>
+    arguments = docopt(__doc__, options_first=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/docopt.py", line 579, in docopt
+    raise DocoptExit()
+docopt.DocoptExit: Usage:
+  mine run <想要启动的我的世界版本号>
+  mine install <想要下载的我的世界版本号>
+  mine micr
+  mine version
+  mine v
+  mine forge <forge版本>
+---------------

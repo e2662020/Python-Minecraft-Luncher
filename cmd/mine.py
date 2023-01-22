@@ -45,7 +45,7 @@ try:
         "setMax": set_max
     }
 
-    debug = True
+    debug = False
 
     arguments = docopt(__doc__, options_first=True)
     # 设置minecraft目录为自动读取的默认目录
