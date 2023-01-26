@@ -114,3 +114,68 @@ INFO:root:MC目录已成功写入文件
 INFO:root:以下为CMD程序提供的日志
 INFO:root:以下为GUI程序所提供日志
 INFO:root:成功加载MC路径
+INFO:root:以下为CMD程序提供的日志
+INFO:root:以下为CMD程序提供的日志
+INFO:root:以下为GUI程序所提供日志
+INFO:root:成功加载MC路径
+INFO:root:以下为CMD程序提供的日志
+INFO:root:以下为GUI程序所提供日志
+INFO:root:成功加载MC路径
+ERROR:root:错误,Python输出:
+Traceback (most recent call last):
+  File "/Users/ericsmac/Downloads/Python-Minecraft-Luncher/./QtGUI/mainwindow.py", line 57, in <module>
+    for i in minecraft_launcher_lib.utils.get_available_versions(minecraft_directory):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/minecraft_launcher_lib/utils.py", line 74, in get_available_versions
+    for i in get_version_list():
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/minecraft_launcher_lib/utils.py", line 38, in get_version_list
+    vlist = get_requests_response_cache("https://launchermeta.mojang.com/mc/game/version_manifest.json").json()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/minecraft_launcher_lib/helper.py", line 222, in get_requests_response_cache
+    r = requests.get(url, headers={"user-agent": get_user_agent()})
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+KeyboardInterrupt
+---------------
+INFO:root:以下为CMD程序提供的日志
+INFO:root:以下为GUI程序所提供日志
+INFO:root:成功加载MC路径
+INFO:root:以下为CMD程序提供的日志
+INFO:root:以下为GUI程序所提供日志
+INFO:root:成功加载MC路径
+INFO:root:以下为CMD程序提供的日志
+INFO:root:以下为GUI程序所提供日志
+INFO:root:成功加载MC路径
+ERROR:root:错误,Python输出:
+Traceback (most recent call last):
+  File "/Users/ericsmac/Downloads/Python-Minecraft-Luncher/./QtGUI/mainwindow.py", line 125, in <module>
+    app.exec_()
+KeyboardInterrupt
+---------------
+INFO:root:以下为CMD程序提供的日志
+INFO:root:以下为GUI程序所提供日志
+INFO:root:成功加载MC路径

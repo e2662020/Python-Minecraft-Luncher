@@ -79,6 +79,7 @@ try:
             self.ui.pushButton_3.clicked.connect(self.RunMinecraft)
             self.ui.pushButton.clicked.connect(self.InstallMinecraft)
             self.ui.pushButton_2.clicked.connect(self.setDirectory)
+            self.ui.pushButton_4.clicked.connect(self.installForge)
 
         def RunMinecraft(self):
             # 获取用户输入的版本号
@@ -106,6 +107,17 @@ try:
                 f.write(minecraft_directory)
             logging.info("MC目录已成功写入文件")
             self.ui.pushButton_2.setText("成功更改")
+        
+        def installForge(self):
+            modVersion = self.ui.lineEdit_2.text()
+            forge_version = minecraft_launcher_lib.forge.find_forge_version(modVersion)
+            if forge_version is None:
+                self.ui.label_3.setText("没有这个版本")
+            else:
+                minecraft_launcher_lib.forge.install_forge_version(forge_version, minecraft_directory)
+        def installFabric(self):
+            modVersion = self.ui.lineEdit_2.text()
+            minecraft_launcher_lib.fabric.install_fabric(modVersion, minecraft_directoy)
 
     app = QApplication([])
     stats = Stats()
