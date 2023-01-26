@@ -16,9 +16,60 @@
 
 ## 使用方法
 
-python3 mine.py install 我的世界版本号     #安装我的世界
-python3 mine.py run 我的世界版本号        #启动我的世界
-其他功能正在探究之中！！！
+### 依赖
 
+| 库名                   | 安装方法                            |
+| :--------------------- | ----------------------------------- |
+| python                 | 见下                                |
+| logging                |                                     |
+| sys                    |                                     |
+| os                     |                                     |
+| PySide6                | pip3 install PySide6                |
+| docopt                 | pip3 install docopt                 |
+| minecraft_launcher_lib | pip3 install minecraft-launcher-lib |
+| subprocess             |                                     |
+| webbrowser             |                                     |
+| typing                 | pip3 install typing                 |
+| IPython                | pip3 install ipython                |
+| time                   |                                     |
+| requests               | pip3 install requests               |
 
+____________________
 
+### 安装Python
+
+如果您使用ubuntu系统
+
+```
+sudu apt-get python3
+```
+
+如果您使用centos系统
+
+```
+sudo yum -y install python3
+```
+
+如果您使用的是linux桌面发行版
+
+[Download Python | Python.org](https://www.python.org/downloads/)
+
+如果您使用macos系统
+
+brew安装
+
+```
+brew install python3
+```
+
+pkg安装
+
+[Download Python | Python.org](https://www.python.org/downloads/)
+
+如果您使用的是Windows系统
+
+[Download Python | Python.org](https://www.python.org/downloads/)
+
+### 命令
+
+您可以通过 python3 mine.py help查看更多
