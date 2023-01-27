@@ -72,6 +72,7 @@ try:
     # 启动minecraft
     # Run minecraft
     if arguments.get("run"):
+        pass
         # 获取用户输入的版本号
         # Get the version number entered by the user
         lib = arguments['<想要启动的我的世界版本号>']
