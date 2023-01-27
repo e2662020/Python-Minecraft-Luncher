@@ -118,8 +118,7 @@ try:
         def installFabric(self):
             modVersion = self.ui.lineEdit_2.text()
             minecraft_launcher_lib.fabric.install_fabric(modVersion, minecraft_directoy)
-        def xxx(self):
-            这是代码
+            
     app = QApplication([])
     stats = Stats()
     stats.ui.show()
