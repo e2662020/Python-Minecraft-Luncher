@@ -73,3 +73,14 @@ pkg安装
 ### 命令
 
 您可以通过 python3 mine.py help查看更多
+
+### 开发文档
+
+[ReadtheDocs](https://python-minecraft-luncher.readthedocs.io/zh_CN/latest/index.html)
+
+[GitBook](https://e2662020s-organization.gitbook.io/pythonminecraftlauncher/)
+
+[GitHubWiki](https://github.com/e2662020/Python-Minecraft-Luncher/wiki)
+
+[Word](/doc/开发教程.docx)
+
