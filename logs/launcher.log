@@ -1,0 +1,11 @@
+INFO:root:以下为CMD程序提供的日志
+INFO:root:以下为GUI程序所提供日志
+INFO:root:成功加载MC路径
+ERROR:root:错误,Python输出:
+Traceback (most recent call last):
+  File "/Users/ericsmac/Downloads/Python-Minecraft-Luncher/./QtGUI/mainwindow.py", line 123, in <module>
+    stats = Stats()
+  File "/Users/ericsmac/Downloads/Python-Minecraft-Luncher/./QtGUI/mainwindow.py", line 68, in __init__
+    self.ui = QUiLoader().load('run.ui')
+RuntimeError: Unable to open/read ui device
+---------------
