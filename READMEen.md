@@ -23,7 +23,7 @@ This turns off developer mode.
 
 ### Dependence
 
-| 库名                   |Installation method|
+| Package                |Installation method|
 | :--------------------- | ----------------------------------- |
 | python                 |See below|
 | logging                |                                     |
