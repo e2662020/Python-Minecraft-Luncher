@@ -15,7 +15,7 @@ This turns off developer mode.
 
 ## Video introduction
 
-[Station B] (https://www.bilibili.com/video/BV1Yt4y1c7WF)
+[BiliBili](https://www.bilibili.com/video/BV1Yt4y1c7WF)
 
 
 
