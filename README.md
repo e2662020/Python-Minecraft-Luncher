@@ -84,3 +84,4 @@ pkg安装
 
 [Word](/doc/开发教程.docx)
 
+[Office](https://1drv.ms/w/s!AkQCjlWvIVpVgxjOkJYBDeMWc3OS?e=j2An3c)
