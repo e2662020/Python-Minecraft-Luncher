@@ -9,3 +9,149 @@ Traceback (most recent call last):
     self.ui = QUiLoader().load('run.ui')
 RuntimeError: Unable to open/read ui device
 ---------------
+INFO:root:以下为CMD程序提供的日志
+INFO:root:以下为GUI程序所提供日志
+INFO:root:成功加载MC路径
+INFO:root:下载Minecraft
+INFO:root:以下为CMD程序提供的日志
+INFO:root:以下为GUI程序所提供日志
+INFO:root:成功加载MC路径
+ERROR:root:错误,Python输出:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/response.py", line 444, in _error_catcher
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/response.py", line 831, in read_chunked
+    chunk = self._handle_chunk(amt)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/response.py", line 775, in _handle_chunk
+    value = self._fp._safe_read(amt)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 612, in _safe_read
+    data = self.fp.read(amt)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [Errno 54] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/models.py", line 816, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/response.py", line 624, in stream
+    for line in self.read_chunked(amt, decode_content=decode_content):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/response.py", line 857, in read_chunked
+    self._original_response.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/response.py", line 461, in _error_catcher
+    raise ProtocolError("Connection broken: %r" % e, e)
+urllib3.exceptions.ProtocolError: ("Connection broken: ConnectionResetError(54, 'Connection reset by peer')", ConnectionResetError(54, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ericsmac/Downloads/Python-Minecraft-Luncher/./QtGUI/mainwindow.py", line 57, in <module>
+    for i in minecraft_launcher_lib.utils.get_available_versions(minecraft_directory):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/minecraft_launcher_lib/utils.py", line 74, in get_available_versions
+    for i in get_version_list():
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/minecraft_launcher_lib/utils.py", line 38, in get_version_list
+    vlist = get_requests_response_cache("https://launchermeta.mojang.com/mc/game/version_manifest.json").json()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/minecraft_launcher_lib/helper.py", line 222, in get_requests_response_cache
+    r = requests.get(url, headers={"user-agent": get_user_agent()})
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/sessions.py", line 745, in send
+    r.content
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/models.py", line 899, in content
+    self._content = b"".join(self.iter_content(CONTENT_CHUNK_SIZE)) or b""
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/models.py", line 818, in generate
+    raise ChunkedEncodingError(e)
+requests.exceptions.ChunkedEncodingError: ("Connection broken: ConnectionResetError(54, 'Connection reset by peer')", ConnectionResetError(54, 'Connection reset by peer'))
+---------------
+INFO:root:以下为CMD程序提供的日志
+INFO:root:以下为GUI程序所提供日志
+ERROR:root:错误,Python输出:
+Traceback (most recent call last):
+  File "/Users/ericsmac/Downloads/Python-Minecraft-Luncher/./QtGUI/mainwindow.py", line 17, in <module>
+    import IPython.display as ipd
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/IPython/__init__.py", line 52, in <module>
+    from .terminal.embed import embed
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/IPython/terminal/embed.py", line 16, in <module>
+    from IPython.terminal.interactiveshell import TerminalInteractiveShell
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/IPython/terminal/interactiveshell.py", line 46, in <module>
+    from .debugger import TerminalPdb, Pdb
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/IPython/terminal/debugger.py", line 6, in <module>
+    from IPython.core.completer import IPCompleter
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/IPython/core/completer.py", line 246, in <module>
+    import jedi
+  File "/Users/ericsmac/Library/Python/3.9/lib/python/site-packages/jedi/__init__.py", line 32, in <module>
+    from jedi.api import Script, Interpreter, set_debug_function, preload_module
+  File "/Users/ericsmac/Library/Python/3.9/lib/python/site-packages/jedi/api/__init__.py", line 13, in <module>
+    import parso
+  File "/Users/ericsmac/Library/Python/3.9/lib/python/site-packages/parso/__init__.py", line 42, in <module>
+    from parso.grammar import Grammar, load_grammar
+  File "/Users/ericsmac/Library/Python/3.9/lib/python/site-packages/parso/grammar.py", line 6, in <module>
+    from parso._compatibility import is_pypy
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 666, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 571, in module_from_spec
+  File "<frozen importlib._bootstrap>", line 526, in _init_module_attrs
+  File "<frozen importlib._bootstrap>", line 398, in parent
+KeyboardInterrupt
+---------------
+INFO:root:以下为CMD程序提供的日志
+ERROR:root:错误,Python输出:
+Traceback (most recent call last):
+  File "/Users/ericsmac/Downloads/Python-Minecraft-Luncher/mine.py", line 90, in <module>
+    minecraft_launcher_lib.install.install_minecraft_version(lib, minecraft_directory,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/minecraft_launcher_lib/install.py", line 143, in install_minecraft_version
+    do_version_install(versionid, minecraft_directory, callback)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/minecraft_launcher_lib/install.py", line 114, in do_version_install
+    install_assets(versiondata, path, callback)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/minecraft_launcher_lib/install.py", line 92, in install_assets
+    download_file("https://resources.download.minecraft.net/" + value["hash"][:2] + "/" + value["hash"], os.path.join(path, "assets", "objects", value["hash"][:2], value["hash"]), callback, sha1=value["hash"], session=session)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/minecraft_launcher_lib/helper.py", line 42, in download_file
+    r = session.get(url, stream=True, headers={"user-agent": get_user_agent()})
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/sessions.py", line 600, in get
+    return self.request("GET", url, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
+---------------
+INFO:root:以下为CMD程序提供的日志
+INFO:root:以下为GUI程序所提供日志
+INFO:root:成功加载MC路径
+INFO:root:以下为CMD程序提供的日志
+INFO:root:启动minecraft,请移步到latest.log
+INFO:root:以下为CMD程序提供的日志
+INFO:root:启动minecraft,请移步到latest.log
