@@ -10,6 +10,7 @@ Usage:
   mine help
   mine
   mine update
+  mine setdir <目录>
 '''
 # 导库
 from docopt import *
@@ -25,11 +26,13 @@ import requests
 logging.basicConfig(filename="logs/launcher.log", level=logging.INFO)
 logging.info("以下为CMD程序提供的日志")
 
+# 设置启动地址
 try:
-    with open("./data/directory.pmldatafile","r",encoding="UTF16BE") as f:
-        minecraft_directory = f.read()
+    with open("./data/directory.pmldatafile", "r", encoding="UTF-16BE") as rf:
+        minecraft_directory = rf.read()
 except:
     minecraft_directory = minecraft_launcher_lib.utils.get_minecraft_directory()
+logging.info("成功加载MC路径")
 
 try:
     minecraft_release_lib = []
@@ -137,9 +140,17 @@ try:
   python3 mine.py install <想要下载的我的世界版本号> #下载我的世界
   python3 mine.py micr #微软登录
   python3 mine.py version #查询版本
+  python3 mine.py setdir '<这里输入目录，别忘了带单引号>' #设置minecraft的安装目录
   python3 mine.py gui #启动GUI界面""")
     elif arguments.get("update"):
         webbrowser.open("http://github.com/e2662020/Python-Minecraft-Luncher/releases/")
+
+    elif arguments.get("setdir"):
+        minecraft_directory = arguments["<目录>"]
+        with open("./data/directory.pmldatafile", "w", encoding="UTF-16BE") as f:
+            f.write(minecraft_directory)
+        logging.info("MC目录已成功写入文件")
+        print("成功更改MC地址为", minecraft_directory)
 except:
     import traceback
 

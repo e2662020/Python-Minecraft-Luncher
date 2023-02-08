@@ -155,3 +155,61 @@ INFO:root:以下为CMD程序提供的日志
 INFO:root:启动minecraft,请移步到latest.log
 INFO:root:以下为CMD程序提供的日志
 INFO:root:启动minecraft,请移步到latest.log
+INFO:root:以下为CMD程序提供的日志
+INFO:root:成功加载MC路径
+INFO:root:以下为GUI程序所提供日志
+INFO:root:成功加载MC路径
+INFO:root:以下为CMD程序提供的日志
+INFO:root:成功加载MC路径
+ERROR:root:错误,Python输出:
+Traceback (most recent call last):
+  File "/Users/ericsmac/Downloads/Python-Minecraft-Luncher/mine.py", line 70, in <module>
+    arguments = docopt(__doc__, options_first=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/docopt.py", line 579, in docopt
+    raise DocoptExit()
+docopt.DocoptExit: Usage:
+  mine run <想要启动的我的世界版本号>
+  mine install <想要下载的我的世界版本号>
+  mine micr
+  mine version
+  mine v
+  mine forge <forge版本> 
+  mine gui
+  mine help
+  mine
+  mine update
+  mine setdir <目录>
+---------------
+INFO:root:以下为CMD程序提供的日志
+INFO:root:成功加载MC路径
+INFO:root:MC目录已成功写入文件
+INFO:root:以下为CMD程序提供的日志
+INFO:root:成功加载MC路径
+ERROR:root:错误,Python输出:
+Traceback (most recent call last):
+  File "/Users/ericsmac/Downloads/Python-Minecraft-Luncher/mine.py", line 70, in <module>
+    arguments = docopt(__doc__, options_first=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/docopt.py", line 579, in docopt
+    raise DocoptExit()
+docopt.DocoptExit: Usage:
+  mine run <想要启动的我的世界版本号>
+  mine install <想要下载的我的世界版本号>
+  mine micr
+  mine version
+  mine v
+  mine forge <forge版本> 
+  mine gui
+  mine help
+  mine
+  mine update
+  mine setdir "<目录>"
+---------------
+INFO:root:以下为CMD程序提供的日志
+INFO:root:成功加载MC路径
+INFO:root:MC目录已成功写入文件
+INFO:root:以下为CMD程序提供的日志
+INFO:root:成功加载MC路径
+INFO:root:MC目录已成功写入文件
+INFO:root:以下为CMD程序提供的日志
+INFO:root:成功加载MC路径
+INFO:root:MC目录已成功写入文件
