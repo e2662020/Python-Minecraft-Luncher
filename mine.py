@@ -145,12 +145,14 @@ try:
     elif arguments.get("update"):
         webbrowser.open("http://github.com/e2662020/Python-Minecraft-Luncher/releases/")
 
+    # 设置minecraft的安装目录
     elif arguments.get("setdir"):
         minecraft_directory = arguments["<目录>"]
         with open("./data/directory.pmldatafile", "w", encoding="UTF-16BE") as f:
             f.write(minecraft_directory)
         logging.info("MC目录已成功写入文件")
         print("成功更改MC地址为", minecraft_directory)
+
 except:
     import traceback
 
