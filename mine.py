@@ -146,6 +146,7 @@ try:
         webbrowser.open("http://github.com/e2662020/Python-Minecraft-Luncher/releases/")
 
     # 设置minecraft的安装目录
+    # Set the installation directory of minecraft
     elif arguments.get("setdir"):
         minecraft_directory = arguments["<目录>"]
         with open("./data/directory.pmldatafile", "w", encoding="UTF-16BE") as f:
