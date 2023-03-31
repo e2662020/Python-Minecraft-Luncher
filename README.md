@@ -82,6 +82,8 @@ pkg安装
 
 [GitHubWiki](https://github.com/e2662020/Python-Minecraft-Luncher/wiki)
 
-[Word](/doc/开发教程.docx)
-
 [Office](https://1drv.ms/w/s!AkQCjlWvIVpVgxjOkJYBDeMWc3OS?e=j2An3c)
+
+## 开发者请看
+### 提交守则
+提交是github充满活力的重要一环，但是正确提交同样重要。与常规提交不同，push之后我们会截拦您的请求，并进行审核。由于精力有限，一般提交会在3-4周处理。在提交的同时需要提交一份issue说明书。以便我们了解你的改动内容，作用。如有在5周您的commit或issue并未的到管理员回复，可以标记紧急以供查看。
